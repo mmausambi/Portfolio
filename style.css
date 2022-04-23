@@ -1,0 +1,200 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+  .cf:before, .cf:after { content: ""; display: table; }
+  .cf:after { clear: both; }
+  .cf { zoom: 1; }
+  .clear { clear: both; }
+
+a:focus,
+a:active {
+	outline: none;
+}
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+
+
+
+/* ======================================================
+   General Rules
+   ====================================================== */
+   .scrolling-wrapper{
+   	overflow-x: auto;
+   }
+
+
+body {
+font-family: 'Roboto', sans-serif;
+background: #565554;
+}
+
+.layout {
+	width: 90%;
+	margin: 30px auto 300px auto;
+	padding-bottom: 300px;
+}
+
+/* All images scale proportionally
+to the size of the container element
+(usually a div): */
+img {
+	width: 100%;
+	height: auto;
+}
+
+
+a {
+	text-decoration: none;
+	color: #F5F749;
+}
+
+a:hover {
+   color: #2E86AB;
+}
+
+.fixed {
+	position: fixed;
+	margin: 0px auto;
+ 	padding: 50px 0px;
+
+	width: 31.333%;
+	margin: 10px 2% 100px 2%;
+
+  color: #ffb324;
+	font-weight: 400;
+	font-size: 12px;
+    z-index: 2;
+}
+
+.home {
+	filter: brightness(0);
+
+	position: fixed;
+	width: 50px;
+	margin: 110px 0% 0 2%;
+}
+
+.buttons {
+	filter: brightness(0.60);
+
+	width: 50px;
+	margin: 110px 0% 2% 0%;
+
+}
+.buttons:hover {
+	filter: invert(40%)sepia(100%)
+		saturate(4);
+
+}
+
+nav {
+	padding: 50px 0px;
+	position: fixed;
+	float: right;
+	width: 94.666%;
+	/*margin: 300px 2% 0 2%;*/
+
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-size: 24px;
+	text-align: right;
+
+  z-index: 2;
+}
+
+
+nav li {
+	float: right;
+	margin: 0 2% 0 2%;
+}
+
+.mainNav {
+	width: 12.666%;
+}
+
+h2 {
+
+	/* width: 12.666%;*/
+
+	font-family: 'Roboto Slab', serif;
+	font-weight: 400;
+	font-size: 24px;
+}
+
+.information {
+  border-style: inset;
+	padding-top: 300px;
+/*	margin-left: 18.666%; */
+}
+
+.information p {
+	font-weight: 400;
+	font-size: 14px;
+
+	letter-spacing: 0.025px;
+	line-height: 29px;
+
+}
+
+
+
+/*Below the Media Queries. Decide on either the mobile first or the destop first approach and delete the example you don't need.   */
+
+
+/* ======================================================
+   Media Queries for Responsivness: Mobile First
+   ====================================================== */
+
+/* All Rules above "Media Queries" apply to smallest size. List what needs to change on bigger screens. Only list declarations that change: */
+
+ @media (min-width: 768px) {
+.example-1 {
+	width: 50%;
+	float: left;
+	}
+}
+
+/* ======================================================
+   Media Queries for Responsivness: Desktop First
+   ====================================================== */
+
+/* All Rules above "Media Queries" apply to biggest size. List what needs to change on smaller screens. Only list declarations that change:  */
+
+ @media (max-width: 1280px) {
+.example-1 {
+	width: 25%;
+	float: left;
+}
+
+}
+
+ @media (max-width: 768px) {
+.example-1 {
+	width: 50%;
+}
+.example-2 {
+	width: 50%;
+}
+}
