@@ -44,6 +44,9 @@ html, body { height:100%; }
    	overflow-x: auto;
    }
 
+.scrollIntoView{
+  scroll-behavior:smooth;
+}
 
 body {
 font-family: 'Roboto', sans-serif;
@@ -51,8 +54,8 @@ background: #565554;
 }
 
 .layout {
-	width: 90%;
-	margin: 30px auto 300px auto;
+	width: 100%;
+	margin: 0px auto 300px auto;
 	padding-bottom: 300px;
 }
 
@@ -67,17 +70,18 @@ img {
 
 a {
 	text-decoration: none;
-	color: #F5F749;
+	color: #ffb324;
 }
 
 a:hover {
-   color: #2E86AB;
+   color: #565554;
 }
 
 .fixed {
+  letter-spacing: 1.1px;
 	position: fixed;
 	margin: 0px auto;
- 	padding: 50px 0px;
+ 	padding: 50px 0px 50px 60px;
 
 	width: 31.333%;
 	margin: 10px 2% 100px 2%;
@@ -110,10 +114,12 @@ a:hover {
 }
 
 nav {
+
 	padding: 50px 0px;
 	position: fixed;
 	float: right;
 	width: 94.666%;
+  color: #565554;
 	/*margin: 300px 2% 0 2%;*/
 
 	font-family: 'Roboto Slab', serif;
@@ -137,26 +143,34 @@ nav li {
 h2 {
 
 	/* width: 12.666%;*/
-
-	font-family: 'Roboto Slab', serif;
+ font-family: 'Roboto Slab', serif;
 	font-weight: 400;
-	font-size: 24px;
+	font-size: 40px;
+  line-height: 50px;
+  	letter-spacing: 1.2px;
 }
 
 .information {
-  border-style: inset;
-	padding-top: 300px;
+
+	padding-top: 0px;
 /*	margin-left: 18.666%; */
 }
 
 .information p {
-	font-weight: 400;
-	font-size: 14px;
 
-	letter-spacing: 0.025px;
+
+	font-weight: light;
+	font-size: 19px;
+	font-family: 'Georgia', serif;
+
+	letter-spacing: 0.2px;
 	line-height: 29px;
 
+  width: 50vw;
+  white-space:normal;
+
 }
+
 
 
 
