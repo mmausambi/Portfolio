@@ -1,0 +1,35 @@
+
+
+h2 {
+  color: #F6F5AE;
+}
+
+body {
+  background-color: #F24236;
+  float: center;
+}
+
+a:hover {
+   color: #2E86AB;
+}
+
+.fixed{
+  color: #ffb324;
+}
+
+.enter {
+color: #ffb324;
+
+}
+
+.button {
+
+  border-color: #F6F5AE;
+  background-color: #F24236;
+
+}
+
+
+.button1:hover {
+  background-color: #F6F5AE;
+}
